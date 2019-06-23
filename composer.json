@@ -1,0 +1,21 @@
+{
+    "name": "lumos/lustom",
+    "description": "Laravel Customizations",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chan Nyein Thaw",
+            "email": "chanyeinthaw@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lumos\\Lustom\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "ext-json": "^1.5"
+    }
+}
