@@ -3,6 +3,7 @@
 namespace Lumos\Lustom;
 
 use Illuminate\Support\ServiceProvider;
+use Lumos\Lustom\Commands\CreateEndpoint;
 use Lumos\Lustom\Commands\CreateModule;
 
 class LustomServiceProvider extends ServiceProvider
@@ -15,7 +16,7 @@ class LustomServiceProvider extends ServiceProvider
     public function register() {
         $this->mergeConfigFrom(__DIR__ . '/config.php', 'lustom');
 
-        $this->commands([CreateModule::class]);
+        $this->commands([CreateModule::class, CreateEndpoint::class]);
     }
 
     /**

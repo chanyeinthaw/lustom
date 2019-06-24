@@ -1,0 +1,11 @@
+<?php
+namespace $namespace$$module$\Http\Endpoint;
+
+
+use Lumos\Lustom\Http\Controller;
+
+class $name$ extends Controller {
+    public function ___invoke() {
+
+    }
+}
