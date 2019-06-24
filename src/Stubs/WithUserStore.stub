@@ -1,0 +1,13 @@
+<?php
+namespace $namespace$$name$\SubStore;
+
+
+use Core\User\$name$Store;
+
+trait With$name$Store
+{
+    protected $store;
+    public function __construct($name$Store $store) {
+        $this->store = $store;
+    }
+}

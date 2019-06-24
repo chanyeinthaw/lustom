@@ -1,0 +1,13 @@
+<?php
+namespace $namespace$$name$;
+
+class $name$Kernel {
+
+    public function middlewareGroup() {
+        return [];
+    }
+
+    public function routeMiddleware() {
+        return [];
+    }
+}
