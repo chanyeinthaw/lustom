@@ -4,9 +4,9 @@ namespace Lumos\Lustom\Commands;
 
 use Illuminate\Console\Command;
 
-class CreateEndpoint extends Command {
-    protected $signature = 'endpoint:create {name} {module}';
-    protected $description = 'Create lustom endpoint';
+class CreateMiddleware extends Command {
+    protected $signature = 'middleware:create {name} {module}';
+    protected $description = 'Create lustom middleware';
 
     public function handle() {
         $name = $this->argument('name');
@@ -20,14 +20,14 @@ class CreateEndpoint extends Command {
             return;
         }
 
-        $stub = file_get_contents(__DIR__ . '/../Stubs/Endpoint.stub');
+        $stub = file_get_contents(__DIR__ . '/../Stubs/Middleware.stub');
 
         $stub = str_replace('$namespace$', $namespace, $stub);
         $stub = str_replace('$module$', $module, $stub);
         $stub = str_replace('$name$', $name, $stub);
 
-        file_put_contents("$root/$module/Http/Endpoint/${name}.php", $stub);
+        file_put_contents("$root/$module/Http/Middleware/${name}.php", $stub);
 
-        $this->info("Endpoint $namespace$module\\Http\\Endpoint\\$name created.");
+        $this->info("Middleware $namespace$module\\Http\\Middleware\\$name created. Don't forget to register it in Kernel.");
     }
 }

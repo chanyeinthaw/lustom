@@ -1,0 +1,11 @@
+<?php
+
+namespace $namespace$$module$\Http\Resource;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class $name$ extends JsonResource {
+    public function toArray($request) {
+        return [];
+    }
+}

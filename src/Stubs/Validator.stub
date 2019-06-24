@@ -1,0 +1,13 @@
+<?php
+
+
+namespace $namespace$$module$\Http\Validator;
+
+
+use Lumos\Lustom\Http\Validator;
+
+class $name$ extends Validator {
+    public function rules() {
+        return [];
+    }
+}
