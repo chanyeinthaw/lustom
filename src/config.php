@@ -2,5 +2,5 @@
 
 return [
     'root' => '_core',
-    'namespace' => 'Core'
+    'namespace' => 'Core\\'
 ];
