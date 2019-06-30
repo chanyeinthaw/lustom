@@ -14,8 +14,8 @@ class CreateResource extends Command {
         $root = config('lustom.root');
         $namespace = config('lustom.namespace');
 
-        if (!file_exists("$root\\$module")) {
-            $this->error("$root\\$module does not exists");
+        if (!file_exists("$root/$module")) {
+            $this->error("$root/$module does not exists");
 
             return;
         }
