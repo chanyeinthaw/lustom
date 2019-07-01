@@ -2,7 +2,7 @@
 namespace $namespace$$name$\SubStore;
 
 
-use Core\$name\$name$Store;
+use Core\$name$\$name$Store;
 
 trait With$name$Store {
     protected $store;
