@@ -7,7 +7,7 @@
  * Time: 8:48 PM
  */
 
-namespace Lumos\Lustom\FileSystem;
+namespace Lumos\Lustom\Filesystem;
 
 
 use Illuminate\Http\UploadedFile;
